@@ -21,7 +21,7 @@ npm install
 Create a `.env` file in the project root with the database connection string (SQLite):
 ```env
 # SQLite DB lives inside the prisma/ folder
-DATABASE_URL="file:./prisma/dev.db"
+DATABASE_URL="file:./dev.db"
 ```
 
 ## 3) Set up the database (Prisma)
