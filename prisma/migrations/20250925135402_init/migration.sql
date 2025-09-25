@@ -1,0 +1,24 @@
+-- AlterTable
+ALTER TABLE `booking` MODIFY `checkIn` DATETIME(3) NOT NULL,
+    MODIFY `checkOut` DATETIME(3) NOT NULL,
+    MODIFY `createdAt` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3);
+
+-- AlterTable
+ALTER TABLE `bookingdate` MODIFY `date` DATETIME(3) NOT NULL;
+
+-- AlterTable
+ALTER TABLE `post` MODIFY `content` VARCHAR(191) NOT NULL,
+    MODIFY `date` DATETIME(3) NOT NULL;
+
+-- AlterTable
+ALTER TABLE `user` MODIFY `createdAt` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3);
+
+-- AlterTable
+ALTER TABLE `villa` MODIFY `description` VARCHAR(191) NOT NULL,
+    MODIFY `amenities` VARCHAR(191) NOT NULL;
+
+-- AlterTable
+ALTER TABLE `villabooking` MODIFY `checkIn` DATETIME(3) NOT NULL,
+    MODIFY `checkOut` DATETIME(3) NOT NULL,
+    MODIFY `createdAt` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
+    MODIFY `notes` VARCHAR(191) NULL;
